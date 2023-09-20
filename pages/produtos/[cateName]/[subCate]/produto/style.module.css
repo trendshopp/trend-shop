@@ -1,0 +1,310 @@
+.main {
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+
+.container {
+    min-height: 70vh;
+    width: 57%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, .3);
+    padding: 7px;
+}
+
+.infBuy {
+    display: flex;
+    justify-content: space-around;
+}
+.miniImages {
+    width: 8%;
+    height: 97%;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.miniImg {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid rgb(248, 168, 20);
+    cursor: pointer;
+}
+
+
+.infoBuy {
+    display: flex;
+}
+
+.zapLogo {
+    width: 25px;
+    margin-right: 7px;
+}
+
+
+
+.miniImg img {
+    height: 100%;
+}
+
+
+.prodInfo {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 30px;
+}
+
+.prodInfoArea {
+    width: 90%;
+}
+
+
+.image {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgArea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgArea img {
+    width: 100%;
+}
+
+.estado {
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.oldPrice {
+    margin-top: 45px;
+    text-decoration: line-through;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.span {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.frete {
+    margin-top: 10px;
+    color: green;
+}
+
+.pagamento {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.metodosImg img {
+    width: 80px;
+    margin-top: 10px;
+}
+
+.descProd {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.desc {
+    width: 95%;
+}
+
+.desc ul {
+    margin-top: 10px;
+}
+
+.desc ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/*BUY INFOS*/
+
+.buyArea {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.buyInfos {
+    height: 95%;
+    width: 90%;
+    border-radius: 10px;
+    border: 1px solid rgb(201, 201, 201);
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.buyLocal {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.buttonBuy {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(green, rgb(5, 185, 5));
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttonInfo {
+    width: 100%;
+    height: 40px;
+    background: rgb(248, 168, 20);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    transition: .1s all ease-in-out;
+}
+
+.buttonBuy:hover {
+    background: linear-gradient(rgb(5, 148, 5), rgb(17, 204, 17));
+}
+
+.buttonInfo:hover {
+    background: rgb(224, 151, 14);
+}
+
+.compra {
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    display: flex;
+}
+
+.compra img {
+    width: 22px;
+    margin: 5px;
+}
+
+/* 37+8 = 45 + 27 = 72 + 28 = 100*/
+
+@media (max-width: 1400px) {
+    .container {
+        width: 70%;
+    }
+}
+@media (max-width: 1120px) {
+    .container {
+        width: 75%;
+    }
+}
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 4px;
+    }
+    .miniImages {
+        width: 8%;
+    }
+
+    .miniImg {
+        margin: 10px;
+        width: 60px;
+        height: 60px;
+    }
+
+}
+@media (max-width: 770px) {
+
+    .main {
+        min-height: 150vh;
+        background-color: white;
+        box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.555);
+    }
+    .infBuy {
+        min-height: 60%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img {
+        height: 200px;
+    }
+    .imgArea img {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .miniImages {
+        margin-top: 0px;
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: top;
+        align-items: center;
+    }
+    .miniImg {
+        margin: 5px;
+        width: 45px;
+        height: 45px;
+    }
+    .image {
+        width: 85%;
+    }
+    .prodInfo {
+        width: 100%;
+    }
+    .buyArea {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .buyInfos {
+        height: 100%;
+    }
+}

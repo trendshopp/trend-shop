@@ -1,0 +1,43 @@
+.main {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(236, 236, 236);
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.produtoArea {
+    width: 81vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.line {
+    margin: 10px;
+    width: 90%;
+    height: 2px;
+    background: linear-gradient(90deg, black, rgba(0, 0, 0, 0));
+}
+
+.listProd {
+    min-width: 100%;
+    display: flex;
+}
+
+@media (max-width: 1600px) {
+
+    .produtoArea {
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 900px) {
+    .produtoArea {
+        width: 95vw;
+    }
+}

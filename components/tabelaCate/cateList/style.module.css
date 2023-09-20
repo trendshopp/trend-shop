@@ -1,0 +1,86 @@
+.categoriaLista {
+    width: 220px;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.h3 {
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.h4 {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.eachCate {
+    height: 30px;
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    transition: .1s all ease-in-out;
+}
+
+.eachCate:hover {
+    background-color: aliceblue;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(143, 143, 143);
+}
+
+.link {
+    width: 100%;
+}
+.setaImg {
+    height: 50%;
+    margin-left: 5px;
+
+}
+
+.cateList {
+    background-color: white;
+    width: 250px;
+    top: 413px;
+    position: absolute;
+}
+
+@media (max-width: 770px) {
+    .container {
+        width: 100vw;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categoriaLista {
+        width: 250px;
+        background-color: white;
+        top: 412px;
+        position: absolute;
+        margin-left: 0px;
+    }
+
+    .cateResponsive {
+        display: flex;
+    }
+}

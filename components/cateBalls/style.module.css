@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.eachBall {
+    height: 85px;
+    width: 85px;
+    background: linear-gradient(rgb(248, 168, 20), rgb(194, 128, 7));
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    margin: 15px;
+    font-size: 15px;
+}
+
+.eachBall img {
+    width: 70%;
+}
+
+@media (max-width: 550px) {
+    .link {
+        font-size: 12px;
+    }
+}

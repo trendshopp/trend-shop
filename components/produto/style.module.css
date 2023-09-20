@@ -1,0 +1,178 @@
+.produto {
+    min-height: 450px;
+    min-width: 240px;
+    max-height: 450px;
+    max-width: 240px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+    margin: 10px;
+    transition: .3s all ease-in-out;
+}
+
+.produto:hover {
+    scale: 1.03;
+}
+
+.dispo {
+    height: 450px;
+    width: 240px;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(146, 146, 146, 0.8);
+    z-index: 0;
+}
+
+.out {
+    color: red;
+    font-size: 12px;
+    text-align: center;
+}
+
+.estado {
+    font-size: 12px;
+    background-color: rgb(248, 168, 20);
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.imgArea {
+    height: 260px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+.link {
+    height: 60%;
+    width: 100%;
+}
+
+.imgArea img {
+    height: 88%;
+}
+
+
+.prodInfo {
+    height: 40%;
+    width: 100%;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.prodInfoArea {
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+}
+
+.oldPriceArea {
+    height: 10%;
+    width: 70%;
+    text-decoration: line-through;
+}
+
+.oldPrice {
+    font-size: 11px;
+}
+
+
+.priceArea {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.off {
+    font-size: 12px;
+    color: green;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.frete {
+    font-size: 12px;
+    color: green;
+}
+
+.prodName {
+    font-weight: bold;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.buttonArea {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buttonLink {
+    height: 100%;
+    width: 70%;
+}
+
+.button {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(green, rgb(5, 185, 5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+.zapLogo {
+    width: 22px;
+    margin-right: 7px;
+}
+
+.button2 {
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(rgb(146, 146, 146),rgb(119, 119, 119) ) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-shadow: 1px 1px 5px black;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(rgb(5, 148, 5), rgb(17, 204, 17));
+}
+
+.space {
+    height: 10px;
+}

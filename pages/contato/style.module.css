@@ -1,0 +1,275 @@
+
+
+.main {
+    min-height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    --orangeMarca: rgb(248, 168, 20);
+}
+
+/* LEFT */
+
+.left {
+    height: 100%;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.barraLateral {
+    height: 400px;
+    width: 100%;
+    background-color: var(--orangeMarca);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proInfo {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.proInfoItem {
+    width: 260px;
+    height: 30%;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px;
+}
+.link {
+    transition: .2s all ease-in-out;
+}
+.link:hover {
+    scale: 1.1;
+}
+
+.nameImg {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.img {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.proInfoTitle {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.proInfoInfo {
+    width: 200px;
+}
+
+@media (max-width: 1110px) {
+    .proInfoItem {
+        width: 180px;
+        margin: 2px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 920px) {
+    .proInfoItem {
+        width: 130px;
+        margin: 3px;
+        font-size: 11px;
+    }
+
+    .proInfoTitle {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .img {
+        width: 30px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 680px) {
+    .main {
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    .left {
+        height: 50vh;
+        width: 90vw;
+    }
+
+    .proInfoItem {
+        width: 180px;
+        margin: 3px;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 415px) {
+    .proInfoItem {
+        width: 130px;
+        margin: 3px;
+        font-size: 11px;
+    }
+
+}
+
+
+
+/* MIDDLE */
+
+.middle {
+    height: 90vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatoArea {
+    height: 70%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 1px 1px 7px black;
+    z-index: 1;
+}
+
+.h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: 26px;
+    letter-spacing: 4px;
+    margin-top: 20px;
+}
+
+.inputArea {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputItem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputTitle {
+    width: 50%;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.input {
+    width: 50%;
+    height: 32px;
+    border: none;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.buttonEnviar {
+    width: 25%;
+    height: 45px;
+    background-color: var(--orangeMarca);
+    color: white;
+    font-weight: bold;
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .1s all ease-in;
+    box-shadow: 1px 1px 5px black;
+}
+
+.buttonEnviar:hover {
+    background-color: rgba(48, 48, 48, 0.9);
+    color: var(--orangeMarca);
+    border: 1px solid var(--orangeMarca);
+}
+
+.span {
+    font-size: 11px;
+    color: rgb(189, 0, 0);
+}
+
+@media (max-width: 680px) {
+    .middle {
+        height: 90%;
+        width: 90%;
+        margin-bottom: 100px;
+    }
+
+    .buttonEnviar {
+        width: 45%;
+    }
+
+    .inputArea {
+        margin-bottom: 30px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .inputTitle {
+        width: 100%;
+    }
+
+    .inputItem {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/* RIGHT */
+
+.right {
+    height: 100%;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 680px) {
+    .right {
+        display: none;
+    }
+}
